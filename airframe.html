@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Search Airframes</title>
+   <link href="/css/stylesheet.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+   <h1>Kincora ✈</h1>  
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Our Hangar
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="airframe.html">Airframes</a>
+        <a class="dropdown-item" href="engine.html">Engines</a>
+    </div>
+    </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>   
+        
+          <li class="nav-item">
+        <a class="nav-link" href="news.html">Industry News</a>
+      </li> 
+        
+         <li class="nav-item">
+        <a class="nav-link" href="careers.html">Careers</a>
+      </li> 
+        
+         <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li> 
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container">
+  <h2>Supported Aircraft</h2>
+  <p>Type the aircraft manufacturer or model below to see if we support it</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Manufacturer</th>
+        <th>Model</th>
+        <th>Engineer</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Boeing</td>
+        <td>737</td>
+        <td>john@kincora.com</td>
+      </tr>
+      <tr>
+        <td>Airbus</td>
+        <td>A320</td>
+        <td>john@kincora.com</td>
+      </tr>
+      <tr>
+        <td>Learjet</td>
+        <td>80</td>
+        <td>marc@kincora.com</td>
+      </tr>
+      <tr>
+        <td>Learjet</td>
+        <td>75</td>
+        <td>shauna@kincora.com</td>
+      </tr>
+        <tr>
+        <td>Bombardier</td>
+        <td>CRJ 900</td>
+        <td>shauna@kincora.com</td>
+      </tr>
+        <tr>
+        <td>Boeing</td>
+        <td>Ravendale</td>
+        <td>shauna@kincora.com</td>
+      </tr>
+        <tr>
+        <td>Bombardier</td>
+        <td>CRJ 200</td>
+        <td>shauna@kincora.com</td>
+      </tr>
+       
+     
+    </tbody>
+  </table>
+  
+ 
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+    
+ <footer class="page-footer">
+  <div class="container">
+
+  </div>
+  <div class="footer-copyright text-center">© 2020 Kincora    <br>   <a href="https://hk.linkedin.com/in/john-brownen-840330140" class="fa fa-linkedin"></a></div>
+        <br>
+         
+        </footer>
+       
+	</body>
+</html>
