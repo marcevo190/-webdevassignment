@@ -9,6 +9,10 @@ body {
     
     }
 
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
 nav {
     border-radius: 5px;
   padding: 0%;
@@ -117,26 +121,21 @@ input[type=submit]:hover {
   }
 
 
- .footercontainer {
-         
+ .footercontainer { 
+  
    opacity: 630%;
 
 }   
-
 
 .page-footer {
   background-color: #333333;
   color: #FFF;
   position: fixed;
   width: 80%;
-bottom: 0;
- 
-
- 
-    
- 
+bottom: 0; 
     
 }
+
 .footer-copyright {
   color: #FFFFFF;
   padding: 0 0;
